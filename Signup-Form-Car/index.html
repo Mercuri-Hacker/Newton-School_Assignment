@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Signup Form Car</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="" />
+</head>
+
+<body>
+    <form method="POST">
+        <label for="name"> Name </label>
+        <input type="text" name="name" id="name" required />
+
+        <br /><br />
+
+        <label for="email"> Email </label>
+        <input type="email" name="email" id="email" required />
+
+        <br /><br />
+
+        <label for="gender"> Gender </label>
+
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="gender" required />
+
+        <label for="female"> Female</label>
+        <input type="radio" name="gender" id="gender" required />
+
+        <br /><br />
+
+        <label for="cars"> Car Brands </label>
+        <select name="car" id="cars" required>
+            <option name="car" value="BMW">BMW</option>
+            <option value="Audi" name="car">Audi</option>
+            <option value="Mercedez" name="car">Mercedez</option>
+        </select>
+
+        <br /><br />
+
+        <label for="age">Age</label>
+        <input type="text" name="age" id="age" required />
+
+        <br /><br />
+
+        <label for="dob">DOB</label>
+        <input type="date" id="dob" name="dob" required />
+
+        <br /><br />
+
+        <label for="password">Password</label>
+        <input id="password" type="password" value="Password" placeholder="Password" required />
+
+        <br /><br />
+
+        <button type="submit">submit</button>
+    </form>
+
+    <script src="" async defer></script>
+</body>
+
+</html>

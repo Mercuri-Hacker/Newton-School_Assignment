@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    display: flex;
+    padding: 20px;
+    font-family: lato;
+    flex-wrap: wrap;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.title {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td,
+th {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    text-align: center;
+    font-size: 16px;
+}
+
+th {
+    background-color: darkblue;
+    color: #ffffff;
+}
+
+td:nth-child(1) {
+    background-color: #f2f2f2;
+}
+
+td:nth-child(8) {
+    background-color: #d1d1d1;
+}

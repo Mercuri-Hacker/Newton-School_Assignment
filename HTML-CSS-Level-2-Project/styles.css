@@ -1,0 +1,242 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap");
+
+/* colors */
+
+:root {
+  --prim-orange: hsl(31, 77%, 52%);
+  --prim-cyan: hsl(184, 100%, 22%);
+  --prim-dark-cyan: hsl(179, 100%, 13%);
+  --neu-white: hsla(0, 0%, 100%, 0.75);
+  --neu-gray: hsl(0, 0%, 95%);
+
+  --gray: #999;
+  --dark-gray: #555;
+  --black: #000;
+  --blood-red: #d90429;
+}
+
+/* box sizing */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lexend Deca", sans-serif;
+  background-color: var(--neu-gray);
+  font-size: 15px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  overflow: auto;
+  color: var(--neu-white);
+}
+/* header section*/
+.header h2{
+  color: #000;
+  margin-bottom: 60px;
+  margin-top: 50px;
+}
+
+/* style cards */
+
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+article {
+  max-width: 278px;
+  height: 450px;
+  padding: 42px;
+  position: relative;
+}
+
+article.sedan {
+  background-color: var(--prim-orange);
+  border-radius: 7px 0 0 7px;
+}
+
+article.suv {
+  background-color: var(--prim-cyan);
+}
+
+article.luxury {
+  background-color: var(--prim-dark-cyan);
+  border-radius: 0 7px 7px 0;
+}
+
+img {
+  margin-bottom: 36px;
+}
+
+h1 {
+  font-family: "Big Shoulders Display", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  color: var(--neu-gray);
+  margin-bottom: 1.5rem;
+}
+
+article p {
+  color: var(--neu-white);
+  font-size: 13.8px;
+  line-height: 1.5rem;
+}
+
+button {
+  position: absolute;
+  cursor: pointer;
+  text-align: center;
+  display: inline-block;
+  padding: 14px;
+  width: 146px;
+  border-radius: 25px;
+  outline: none;
+  border: 2px solid var(--neu-gray);
+  font-family: inherit;
+  transition: all 0.5s ease-in-out;
+  bottom: 42px;
+}
+
+.sedan button {
+  background: var(--neu-gray);
+  color: var(--prim-orange);
+}
+
+.suv button {
+  background-color: var(--neu-gray);
+  color: var(--prim-cyan);
+}
+
+.luxury button {
+  background-color: var(--neu-gray);
+  color: var(--prim-dark-cyan);
+}
+
+button:hover {
+  background-color: transparent;
+  color: var(--neu-gray);
+}
+
+button:active {
+  transform: scale(0.9);
+}
+
+/* style footer */
+
+.footer {
+  width: 100%;
+  margin: 0 auto;
+  position: absolute;
+  color: var(--black);
+  bottom: 30px;
+  font-size: 0.75rem;
+  line-height: 20px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 2;
+}
+
+.footer a {
+  text-decoration: none;
+  color: var(--dark-gray);
+  margin-left: 5px;
+}
+
+.footer a:hover {
+  color: var(--blood-red);
+}
+
+/* style tablet and mobile */
+
+@media only screen and (max-width: 1226px) {
+  body {
+    font-family: "Lexend Deca", sans-serif;
+  background-color: var(--neu-gray);
+  font-size: 15px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  overflow: auto;
+  color: var(--neu-white);
+  }
+  
+  .header h2{
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  main {
+    padding: 50px 0;
+    flex-direction: row;
+  }
+
+  article.sedan {
+    border-radius: 7px 7px 0 0;
+  }
+
+  article.luxury {
+    border-radius: 0 0 7px 7px;
+  }
+
+  article p {
+    font-size: 0.77rem;
+  }
+
+  .footer {
+    position: relative;
+    width: auto;
+    padding-bottom: 10px;
+  }
+}
+@media only screen and (max-width: 844px) {
+  body {
+    display: flex;
+    width: 100%;
+    overflow: scroll;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header h2{
+    color: #000;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    text-align: center;
+  }
+
+  main {
+    padding: 50px 0;
+    flex-direction: column;
+  }
+
+  article.sedan {
+    border-radius: 7px 7px 0 0;
+  }
+
+  article.luxury {
+    border-radius: 0 0 7px 7px;
+  }
+
+  article p {
+    font-size: 0.77rem;
+  }
+
+  .footer {
+    position: relative;
+    width: auto;
+    padding-bottom: 10px;
+  }
+}

@@ -1,0 +1,150 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Karla", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  background-color: hsl(211, 36%, 17%);
+}
+html {
+  font-size: 62.5%;
+}
+.card-section {
+  max-width: 144rem;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  width: 50%;
+  border-radius: 11px;
+  overflow: hidden;
+}
+.community {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  padding: 3.8rem;
+  background-color: #fffdfd;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.community-header {
+  font-size: 2rem;
+  font-weight: 700;
+  color: hsl(179, 62%, 43%);
+  margin-bottom: 3.2rem;
+}
+.community-sub-header {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: hsl(71, 87%, 30%);
+  margin-bottom: 2.4rem;
+}
+.community-text {
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.6;
+  color: hsl(218, 22%, 67%);
+  text-align: center;
+}
+.card-details {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.card {
+  background-color: hsl(179, 64%, 16%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3.8rem;
+}
+.card-header {
+  font-size: 1.6rem;
+  color: hsl(204, 43%, 93%);
+  font-weight: 600;
+  margin-bottom: 1.8rem;
+}
+.price {
+  font-size: 1.6rem;
+  color: hsl(203, 44%, 95%);
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  margin-bottom: 1.2rem;
+}
+.price span {
+  color: hsl(204, 43%, 93%);
+  font-size: 3.2rem;
+  font-weight: 700;
+}
+.card-details-text {
+  font-size: 1.6rem;
+  color: hsl(204, 43%, 93%);
+  line-height: 1.6rem;
+  margin-bottom: 3.2rem;
+}
+.btn:link,
+.btn:visited {
+  background-color: hsl(71, 87%, 30%);
+  color: hsl(204, 43%, 93%);
+  font-size: 1.6rem;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  display: block;
+  width: 70%;
+  text-align: center;
+  padding: 1.4rem;
+  border-radius: 10px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+}
+.why-us {
+  background-color: hsla(177, 26%, 45%, 0.699);
+  padding: 3.8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.why-us-header {
+  font-size: 1.6rem;
+  color: hsl(204, 43%, 93%);
+  font-weight: 600;
+  margin-bottom: 1.8rem;
+}
+.why-us-items {
+  list-style-type: none;
+  text-align: center;
+  font-size: 1.6rem;
+  color: hsl(204, 43%, 93%);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+@media screen and (max-width: 450px) {
+  .card-details {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas:
+      "a"
+      "b";
+  }
+  .card {
+    grid-area: a;
+  }
+  .why-us {
+    grid-area: b;
+  }
+  html {
+    font-size: 45.5%;
+  }
+  .container {
+    width: 90%;
+  }
+}

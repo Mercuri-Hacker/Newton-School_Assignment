@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Shopping Cart</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+    <h1>Grocery List</h1>
+    <!--input fields -->
+    <input placeholder="Enter item name" id="item-name-input">
+    <input placeholder="Enter the price" id="item-price-input">
+    <button onclick="submitItem()">Add</button>
+    <table>
+        <tr>
+            <th>Sr. No.</th>
+            <th>Title</th>
+            <th>Price</th>
+        </tr>
+        <tr>
+            <td> Grand Total </td>
+            <td data-ns-test="grandTotal">0</td>
+        </tr>
+    </table>
+
+    <script src="./script.js" async defer></script>
+</body>
+
+</html>

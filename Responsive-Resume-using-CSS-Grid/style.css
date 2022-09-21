@@ -1,0 +1,340 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Write CSS code below */
+
+body {
+  display: block;
+  margin: 0px;
+  /* min-height: 1000px; */
+}
+
+.main-content {
+    min-height: 1000px;
+    width: 90%;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 300px 700px;
+  }
+  
+  /* lEFT SECTION */
+  
+  .left-section {
+    grid-column: span 1;
+    background-color: #242531;
+  }
+  
+  .left-content {
+    font-size: 16px;
+    padding: 1rem;
+  }
+  
+  .left-content .profile-image {
+      display: block;
+      margin: auto;
+      border: 5px white solid;
+      border-radius: 30%;
+      width: 60%;
+  }
+  
+  .left-content .name {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.02px;
+    padding: 0.8rem;
+  }
+  
+  .left-content .designation {
+    color: #94d9ea;
+    padding-bottom: 0.5rem;
+    text-align: center;
+    font-size: 1rem;
+    text-transform: uppercase;
+  }
+  
+  .left-content .description {
+    color: #f5f5f5;
+    padding: 1rem;
+    text-align: center;
+    font-size: 0.75rem;
+  }
+  
+  /* ICON */
+  
+  i {
+    color: #7b2cbf;
+  }
+  
+  .social-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+  }
+  
+  .social-media li a {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  
+  .personal-details {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .personal-details a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.85rem;
+  }
+  /* SKILL */
+  
+  .skills {
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 0.75rem;
+    padding: 1rem 0.5rem 1rem 0.5rem;
+  }
+  
+  .skill-name {
+    color: #fff;
+    font-weight: 0.65rem;
+    font-size: 0.65rem;
+    text-align: left;
+    padding-bottom: 0.5rem;
+  }
+  
+  .progress-bar {
+    border: 1px white solid;
+    height: 4px;
+    margin-bottom: 0.5rem;
+    background-color: #fff;
+  }
+  
+  /* RIGHT SECTION */
+  
+  .right-section {
+    grid-column: span 1 / span 2;
+    background-color: #d6ccc2;
+    color: #000;
+  }
+  
+  .right-main-content {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+  
+  .right-title {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 0.5rem;
+    letter-spacing: 1px;
+  }
+  
+  .about-details {
+    padding: 0.5rem;
+    font-size: 1rem;
+    line-height: 1.8rem;
+  }
+  
+  .strength-weakness {
+    padding: 0.5rem;
+  }
+  
+  .strength-weakness h1 {
+    text-decoration: underline;
+    text-transform: uppercase;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+  }
+  .strength-weakness li {
+    padding-left: 0.5rem;
+    line-height: 1.5rem;
+    font-weight: 600;
+    text-transform: capitalize;
+  }
+  
+  .school-college {
+    padding: 0.5rem;
+  }
+  
+  .school-college p {
+    line-height: 2rem;
+    font-weight: 600;
+    font-size: 1.04rem;
+  }
+  
+  .my-work {
+    padding: 0.5rem;
+    line-height: 2rem;
+    font-weight: 600;
+  }
+  
+  /* RESPONSIVE MEDIA */
+  
+  @media screen and (max-width: 673px) {
+      .main-content {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  
+    /* LEFT SECTION */
+
+
+    /* .left-section {
+      grid-column: span 1;
+    }
+  
+    .left-content {
+      padding: 1rem;
+      font-size: 16px;
+    }
+    .left-content .profile-image {
+      width: 60%;
+      margin: auto;
+      display: block;
+      border: 5px white solid;
+      border-radius: 30%;
+    }
+    .left-content .name {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: white;
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 0.02px;
+      padding: 0.8rem;
+    }
+    .left-content .designation {
+      color: #94d9ea;
+      padding-bottom: 0.5rem;
+      text-align: center;
+      font-size: 1rem;
+      text-transform: uppercase;
+    }
+    .left-content .description {
+      color: #f5f5f5;
+      padding: 1rem;
+      text-align: center;
+      font-size: 0.75rem;
+    } */
+  
+    /* ICON */
+
+    /* i {
+      color: #7b2cbf;
+    }
+  
+    .social-media {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 1rem;
+    }
+  
+    .social-media li a {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+  
+    .personal-details {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+  
+    .personal-details a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 0.85rem;
+    } */
+
+    /* SKILL */
+  
+    /* .skills {
+      color: #fff;
+      text-transform: uppercase;
+      text-align: center;
+      font-size: 0.75rem;
+      padding: 1rem 0.5rem 1rem 0.5rem;
+    }
+  
+    .skill-name {
+      color: #fff;
+      font-weight: 0.65rem;
+      font-size: 0.65rem;
+      text-align: left;
+      padding-bottom: 0.5rem;
+    }
+  
+    .progress-bar {
+      border: 1px white solid;
+      height: 4px;
+      margin-bottom: 0.5rem;
+      background-color: #fff;
+    } */
+  
+    /* RIGHT SECTION */
+  
+    /* .right-section {
+      grid-column: span 1 / span 2;
+    }
+    .right-main-content {
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+      padding-left: 3rem;
+      padding-right: 3rem;
+    }
+    .right-title {
+      font-size: 1.2rem;
+      font-weight: 700;
+      padding: 0.5rem;
+      letter-spacing: 1px;
+    }
+    .about-details {
+      padding: 0.5rem;
+      font-size: 1rem;
+      line-height: 1.8rem;
+    }
+    .strength-weakness {
+      padding: 0.5rem;
+    }
+    .strength-weakness h1 {
+      text-decoration: underline;
+      text-transform: uppercase;
+      padding-bottom: 0.5rem;
+      padding-top: 0.5rem;
+    }
+    .strength-weakness li {
+      padding-left: 0.5rem;
+    }
+    .school-college{
+      padding: 0.5rem;
+  }
+  
+  .school-college p{
+      line-height: 2rem;
+      font-weight: 600;
+      font-size: 1.04rem;
+  }
+  
+  .my-work{
+      padding: 0.5rem;
+      line-height: 2rem;
+      font-weight: 600;
+  } */
+  
+  }
+  

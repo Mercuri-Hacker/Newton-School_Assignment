@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div id="main">
+        <div class="App">
+            <div class='text-here' id='text-container'>
+                This is some example text
+            </div>
+            <div class='change-prop'>
+                <p>
+                    <input type='text' placeholder='Enter Color' id='colorbox'></input>
+                    <button onClick='setColor()' id='colorchange'>Set Color</button>
+                </p>
+                <p>
+                    Change font size using slider
+                    <input type='range' name='text-size' min='10' max='100' default='55' oninput='sizeChange()'
+                        id="fontsize"></input>
+                </p>
+                <p>
+                    <button class="stylebt" onClick='setLine()' id="underline">Underline</button>
+                    <button class="stylebt" onClick='setItalic()' id="italic">Italic</button>
+                    <button class="stylebt" onClick='setBold()' id="bold">Bold</button>
+                </p>
+                <p>
+                    Select Font Family: <select onChange='setFont()' id="list">
+                    </select>
+                </p>
+                <button onClick='display()' id='getstyle'> Get Style Properties </button>
+                <p id='css-props'></p>
+            </div>
+
+            <script src="./script.js" async defer></script>
+</body>
+
+</html>

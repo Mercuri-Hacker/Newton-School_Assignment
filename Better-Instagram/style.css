@@ -1,0 +1,17 @@
+#div1, #div2, #div3, #div4, #div5, #div6{
+    float: left;
+    width:85px;
+    height:85px;
+    margin: 20px; 
+    padding: 0px;
+    border: 1px solid black;
+  }
+img {
+height: 80px;
+width: 80px;
+}
+
+div {
+height: 100px;
+width: 100px;
+}

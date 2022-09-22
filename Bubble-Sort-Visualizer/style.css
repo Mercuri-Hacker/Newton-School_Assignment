@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.num-holder {
+  display: flex;
+  width: 80vw;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.num {
+  background-color: pink;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  transition: border 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
+}

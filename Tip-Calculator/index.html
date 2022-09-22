@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="./style.css">
+        <link href="https://fonts.googleapis.com/css?family=Annie%20Use%20Your%20Telescope" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                TIP CALCULATOR
+            </div>
+            <div class="body">
+                <div>
+                    <p>How much was your bill?</p>
+                    $ <input type="number" id="billamt" placeholder="Amount">
+                    <p>How was the sevices?</p>
+                    <select id="serviceQual">
+                        <option selected="" disabled="" hidden="">-- Choose an Option --</option>
+                        <option value="0.05">5% - Terrible</option>
+                        <option value="0.1">10% - Bad</option>
+                        <option value="0.15">15% - It was Ok</option>
+                        <option value="0.2">20% - Good</option>
+                        <option value="0.25">25% - Great</option>
+                        <option value="0.3">30% - Outstanding</option>
+                    </select>
+                    <p>Total number of persons</p>
+                        <input type="number" id="peopleamt" placeholder="Number of people sharing the bill"> <br>
+                        <button id="calculate">Calculate</button>
+                </div>
+                <div class="tip">
+                    <p>Tip Amount</p>
+                    $ <span id="total"> 0.10 </span>
+                    <span id="each" style="display: none;">Each</span>
+                </div>
+            </div>
+        </div>
+        <script src="./script.js"></script>
+    </body>
+</html>

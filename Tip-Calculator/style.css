@@ -1,0 +1,44 @@
+body{
+  background-color: #000;
+}
+.container{
+  text-align: center;
+  width: 50%;
+  height: 100%;
+  padding: 10px;
+  margin: auto;
+}
+.header{
+  background-color: brown;
+  text-align: center;
+  padding: 8%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.body{
+  background-color: grey;
+  padding: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+button{
+  margin: 20px;
+  padding: 15px;
+  background-color: #000;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 15px;
+  text-align: center;
+  cursor: pointer;
+}
+button:hover{
+  background-color: red;
+}
+
+input, select{
+  width: 85%;
+  border-radius: 5px;
+  padding: 10px;
+}

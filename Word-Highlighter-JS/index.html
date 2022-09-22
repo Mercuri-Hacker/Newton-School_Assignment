@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="./style.css">
+        <link href="https://fonts.googleapis.com/css?family=Annie%20Use%20Your%20Telescope" rel="stylesheet">
+    </head>
+    <body>
+        <label for="paragraph-input">Enter paragraph here</label>
+    <div id="paragraph-input" contenteditable="true">Enter text here</div>
+    <br />
+    <br />
+    <div>Total matches:- <span id="words-counter">0</span></div>
+    <br />
+    <label for="word-input">Enter word to be higlighted here</label>
+    <input type="text" id="word-input" oninput="highlight()">
+    <br />
+    <br />
+    <label for="ignore-case">Ignore case?</label>
+    <input type="checkbox" id="ignore-case" onchange="highlight()" />
+        <script src="./script.js"></script>
+    </body>
+</html>

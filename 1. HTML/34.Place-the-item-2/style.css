@@ -1,0 +1,29 @@
+.holder {
+    /* Write css here */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.item {
+    width: 100px;
+    height: 100px;
+    font-size: 3rem;
+}
+
+.item-1 {
+    background: red;
+
+}
+
+.item-2 {
+    background: blue;
+
+}
+
+.item-3 {
+    background: green;
+
+}

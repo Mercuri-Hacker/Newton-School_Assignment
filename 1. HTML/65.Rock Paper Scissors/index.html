@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>search through the bill</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <h1 class="header">
+        Rock Paper Scissors
+    </h1>
+    <label for="game-number">Number of rounds:-</label>
+    <input type="number" name="game-number" id="game-number" data-ns-test="game-number" />
+    <button id="play-game" data-ns-test="play-game" onclick="playGame()">Play</button>
+    <div class="game-container" id="game-container">
+        <div>
+            <button data-ns-test="rock" id="rock" value="0">rock</button>
+            <button data-ns-test="paper" id="paper" value="1">paper</button>
+            <button data-ns-test="scissors" id="scissors" value="2">scissors</button>
+        </div>
+        <div>
+            <!-- Computer choose :- -->
+            <span data-ns-test="computer-choose" id="computer-choose"></span>
+        </div>
+        <span id="round-result" data-ns-test="round-result">
+            WON
+        </span>
+        <div>
+            <!-- User Points :- -->
+            <span data-ns-test="user-points" id="user-points">0</span>
+            <!-- Computer Points :- -->
+            <span data-ns-test="computer-points" id="computer-points">0</span>
+        </div>
+        <div>
+            <!-- Rounds Left :- -->
+            <span data-ns-test="rounds-left" id="rounds-left">0</span>
+        </div>
+    </div>
+    <div id="game-result" data-ns-test="game-result">
+        WON
+    </div>
+
+    <script src="./script.js" async defer></script>
+</body>
+
+</html>
